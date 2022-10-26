@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class demo1
+{
+    public static void main(String args[])
+    {
+        Scanner in=new Scanner(System.in);
+        int a,b,c,gcd=0,i;
+        System.out.println("Enter First number");
+        a=in.nextInt();
+        System.out.println("Enter Second Number");
+        b=in.nextInt();
+        c=a*b;
+        for(i=1;i<c;i++)
+        {
+            if(a%i==0 && b%i==0)
+            gcd=i;
+        }
+        System.out.println("The Greatest Common Divisor is"+gcd);
+        }
+}
+//Output
+//Enter First number
+//2
+//Enter Second Number
+//4
+//The Greatest Common Divisor is2
